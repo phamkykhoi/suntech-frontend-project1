@@ -1,0 +1,677 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: normal;
+}
+
+body {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    height: 65px;
+}
+
+div.container {
+    margin: 0px auto;
+    max-width: 1240px;
+}
+
+div.logo {
+    width: 25%;
+}
+
+div#menu-top {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+div#menu-top .logo a {
+    display: block;
+    text-decoration: none;
+    color: #3cb878;
+}
+
+.menu  {
+    width: 60%;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #535a63;
+    display: block;
+    padding: 0px 20px 0px 20px;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: #3cb878;
+}
+
+.sidebar-top {
+    display: flex;
+}
+
+.sidebar-top a {
+    text-decoration: none;
+    display: block;
+    width: 50px;
+}
+
+a.icon-cart {
+    position: relative;
+}
+
+a.icon-cart span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background: #3cb878;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    top: -13px;
+    right: 19px;
+    font-size: 13px;
+}
+
+/*Slider*/
+
+#slider, #slider .slider-item {
+    width: 100%;
+    height: 560px;
+}
+
+.slider-item {
+    position: relative;
+}
+
+.slider-item h2 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 8px;
+}
+
+.slider-item h2 small {
+    display: block;
+    color: #3cb878;
+    padding-top: 10px;
+}
+
+#slider .slider-item img {
+    max-width: 100%;
+}
+
+/* Best Seller */
+#best-seller {
+    width: 100%;
+    margin-top: 60px;
+    display: block;
+}
+
+ul.product-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.product-list li {
+    width: 20%;
+    margin-right: 0px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+ul.product-list li:hover {
+    cursor: pointer;
+}
+
+ul.product-list li:hover .buy {
+    display: block;
+}
+
+ul.product-list li img {
+    max-width: 220px;
+    margin-bottom: 10px;
+}
+
+ul.product-list li a {
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+ul.product-list li p {
+    color: #3cb878;
+    padding-top: 8px;
+}
+
+ul.product-list li.introduce {
+    align-self: center;
+}
+
+ul.product-list li.introduce h2 {
+    text-transform: uppercase;
+    color: #333;
+}
+
+ul.product-list li.introduce small {
+    color: #3cb878;
+}
+
+ul.product-list li.introduce p {
+    color: #333;
+    font-size: .7rem;
+    padding: 15px 2px;
+    line-height: 22px;
+}
+
+ul.product-list li .buy {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: none;
+}
+
+ul.product-list li .buy a {
+    text-decoration: none;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #62c592 url(../img/buy.png) no-repeat;
+    margin-top: 10px;
+}
+
+ul.product-list li .buy a:hover {
+    background-color: #1ce47d;
+}
+
+ul.product-list li .buy a.add-to-cart {
+    background-position: 1px 5px;
+}
+
+
+ul.product-list li .buy a.add-to-fav {
+    background-position: 2px -45px;
+}
+
+ul.product-list li .buy a.compare {
+    background-position: 2px -95px;
+}
+
+/*Shipping*/
+
+section#shipping {
+    background: #f5f6f9;
+    padding: 50px 0px;
+    margin-top: 60px;
+}
+
+section#shipping ul {
+    display: flex;
+}
+
+section#shipping ul li {
+    width: 25%;
+    text-align: center;
+}
+
+section#shipping ul li h2 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+
+section#shipping ul li small {
+    color: #999;
+    font-size: 13px;
+}
+
+section#shipping ul li:last-child img {
+    margin-top: -15px;
+}
+
+/*Promotion*/
+#promotion {
+    background: #2e3348;
+}
+
+#promotion ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#promotion ul li {
+    width: 30%;
+    text-align: center;
+    padding: 40px 0px;
+    display: block;
+}
+
+#promotion ul li:nth-child(2) {
+    background-color: #34394f;
+}
+
+#promotion ul li img {
+    max-width: 80%;
+}
+
+/*Feature Product*/
+
+#feature-product {
+    margin-top: 50px;
+}
+
+#feature-product h2 {
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#feature-product small {
+    color: #3cb878;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Brands Name*/
+section#brands {
+    display: flex !important;
+    width: 100%;
+    display: block;
+}
+
+.discount, .brands {
+    width: 50%;
+    height: 250px;
+}
+
+.discount {
+    background: #2e3348 url(../img/bgform.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.discount div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discount h2 {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.discount p {
+    color: #FFF;
+    font-size: 12px;
+    max-width: 400px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.discount input {
+    min-width: 280px;
+    height: 30px;
+    padding: 3px;
+    font-size: .8rem;
+}
+
+.discount button {
+    background-color: #3cb878;
+    color: #FFF;
+    border: none;
+    height: 38px;
+    padding: 3px 15px;
+}
+
+section#brands .brands {
+    background: #f5f6f9;
+    display: flex;
+   /* justify-content: center;
+    align-items: center;*/
+}
+
+section#brands .brands ul {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+section#brands .brands ul li a {
+    display: flex;
+    width: 128px;
+    height: 130px;
+    background: orange;
+    margin-left: 5px;
+    background: url(../img/brand.png) no-repeat;
+}
+
+section#brands .brands ul li:nth-child(2) a {
+    background-position: -232px !important;
+    width: 130px;
+}
+
+section#brands .brands ul li:nth-child(3) a {
+    background-position: -460px !important;
+    width: 135px;
+}
+
+section#brands .brands ul li:nth-child(4) a {
+    background-position: -688px !important;
+    width: 135px;
+}
+
+
+/*Footer*/
+
+footer {
+    background: #000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+footer .left, footer .right {
+    width: 50%;
+}
+
+footer .left {
+    text-align: center;
+    font-size: .8rem;
+}
+
+footer .right ul {
+    display: flex;
+    margin: auto;
+    max-width: 300px;
+}
+
+footer .right ul li a {
+    display: flex;
+    width: 50px;
+    height: 30px;
+    background: url(../img/payment.png) no-repeat;
+    margin-left: 10px;
+    align-self: center;
+}
+
+footer .right ul li:nth-child(2) a {
+    background-position: -60px
+}
+
+footer .right ul li:nth-child(3) a {
+    background-position: -120px
+}
+
+footer .right ul li:nth-child(4) a {
+    background-position: -180px
+}
+
+footer .right ul li:nth-child(5) a {
+    background-position: -240px
+}
+
+
+/*Start For Mobile*/
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+@media only screen and (max-width: 996px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .sidebar-top a {
+        width: 35px;
+    }
+
+    div#menu-top .logo a {
+        text-align: center;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #535a63;
+        display: block;
+        padding: 0px 12px 0px 5px;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+
+    .slider-item h2 {
+        top: 20%;
+        left: 10%; 
+    }
+
+    #slider, #slider .slider-item {
+        height: 322px;
+    }
+
+    #best-seller {
+        margin-top: 0px;
+    }
+
+    section#brands .brands ul {
+        flex-wrap: wrap;
+    }
+
+    ul.product-list li {
+        width: 30.333%;
+        text-align: center;
+        padding: 10px;
+        justify-content: space-around;
+        margin-bottom: 0px;
+    }
+
+    ul.product-list li img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .discount button {
+        max-width: 290px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .discount, .brands {
+        height: 280px;
+    }
+
+    footer {
+        background: #000;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .menu  {
+        display: none;
+    }
+
+    div.logo {
+        width: 70%;
+    }
+
+    .sidebar-top {
+        width: 30%;
+        justify-content: flex-end;
+    }
+
+    div#menu-top .logo a {
+        font-size: 1.3rem;
+        text-indent: 15px;
+    }
+
+    #header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #slider, #slider .slider-item {
+        height: 158px;
+    }
+
+    .slider-item h2 {
+        top: 35%;
+        left: 5%;
+        font-size: 1rem;
+    }
+
+    a.icon-cart span {
+        top: -19px;
+    }
+
+    #best-seller {
+        margin-top: 5px;
+    }
+
+    ul.product-list li.introduce {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
+    ul.product-list li {
+        width: 46% !important;
+        text-align: center;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    ul.product-list li img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section#shipping {
+        margin-top: 0px;
+        padding: 15px 0px;
+    }
+
+    section#shipping ul {
+        flex-direction: column;
+    }
+
+    section#shipping ul li {
+        width: 100%;
+        height: 100px;
+    }
+
+    section#shipping ul li h2 {
+        font-size: 1.2rem;
+    }
+
+    #promotion ul {
+        flex-direction: column;
+    }
+
+    #promotion ul li {
+        width: 100%;
+    }
+
+    section#brands {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .discount, .brands {
+        width: 100%;
+        height: auto;
+    }
+
+    section#brands .brands ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    section#brands .brands ul li {
+        width: 50%;
+    }
+
+    section#brands .brands ul li a {
+        margin-left: 10px;
+    }
+
+    .discount button {
+        width: 77%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 290px;
+    }
+
+    footer {
+        background: #000;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        padding-top: 12px;
+        flex-direction: column;
+    }
+
+    footer .left { 
+        padding-bottom: 40px;
+    }
+
+    footer .left , footer .right {
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+
+    ul.product-list {
+        justify-content: space-around;
+    }
+
+    ul.product-list li {
+        width: 48% !important;
+        padding: 0px;
+    }
+
+    div#menu-top .logo a {
+        font-size: 1.1rem;
+        text-indent: 0px;
+    }
+}
