@@ -4,6 +4,10 @@
     box-sizing: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-size: 1rem;
     font-family: sans-serif;
@@ -74,6 +78,10 @@ div#menu-top .logo a {
 
 a.icon-cart {
     position: relative;
+}
+
+a.icon-cart:hover ul.cart-product-list {
+    display: block;
 }
 
 a.icon-cart span {
@@ -674,4 +682,56 @@ footer .right ul li:nth-child(5) a {
         font-size: 1.1rem;
         text-indent: 0px;
     }
+}
+
+ul.cart-product-list {
+    position: absolute;
+    background: #f8f8f8;
+    min-width: 250px;
+    top: 20px;
+    right: 0px;
+    border-radius: 5px;
+    z-index: 999;
+    display: none;
+}
+
+ul.cart-product-list li {
+    color: #999;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+    font-weight: bold;
+}
+
+ul.cart-product-list li small {
+    display: block;
+    font-style: italic;
+    padding-top: 5px;
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+
+ul.cart-product-list li:hover {
+    background: #fefefe;
+}
+
+ul.cart-product-list li button {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+small.alert-message {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    background: #3cb878;
+    display: block;
+    width: 250px;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    display: none;
 }
